@@ -1,5 +1,5 @@
 :root{--bg:#0f1724;--card:#0b1220;--accent:#00bcd4;--muted:#94a3b8;--accent-2:#10b981}
-body{font-family:Inter,Segoe UI,Roboto,Arial;background:linear-gradient(180deg,#4B5B6E 0%, #4B5B6E 100%);color:#e6eef6;
+body{font-family:Inter,Segoe UI,Roboto,Arial;background:linear-gradient(180deg,#071029 0%, #0b1220 100%);color:#e6eef6;
   margin:0;display:flex;justify-content:center;align-items:center;min-height:100vh}
 .wrap{max-width:980px;width:100%;}
 header{display:flex;align-items:center;gap:16px}
@@ -8,7 +8,7 @@ h1{margin:0;font-size:1.4rem}
 button,select{background:var(--card);color:inherit;border:1px solid rgba(255,255,255,0.04);padding:8px 12px;border-radius:8px;cursor:pointer}
 button:disabled{opacity:0.5;cursor:not-allowed}
 .card{background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent);padding:16px;border-radius:12px;margin-top:12px;border:1px solid rgba(255,255,255,0.03)}
-.q{font-weight:700;font-size:1.2rem;margin-bottom:30px}
+.q{font-weight:700;font-size:1.2rem;margin-bottom:12px}
 .meta{color:var(--muted);font-size:0.9rem;margin-top:8px}
 .choices{margin-top:8px;display:flex;flex-direction:column;gap:8px}
 .choice{padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.06);cursor:pointer}
