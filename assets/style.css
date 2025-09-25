@@ -1,6 +1,7 @@
 :root{--bg:#0f1724;--card:#0b1220;--accent:#00bcd4;--muted:#94a3b8;--accent-2:#10b981}
-body{font-family:Inter,Segoe UI,Roboto,Arial;background:linear-gradient(180deg,#071029 0%, #0b1220 100%);color:#e6eef6;margin:0;padding:24px}
-.wrap{max-width:980px;margin:0 auto}
+body{font-family:Inter,Segoe UI,Roboto,Arial;background:linear-gradient(180deg,#071029 0%, #0b1220 100%);color:#e6eef6;
+  margin:0;display:flex;justify-content:center;align-items:center;min-height:100vh}
+.wrap{max-width:980px;width:100%;}
 header{display:flex;align-items:center;gap:16px}
 h1{margin:0;font-size:1.4rem}
 .controls{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}
@@ -16,6 +17,4 @@ button:disabled{opacity:0.5;cursor:not-allowed}
 .choice.wrong{background:rgba(239,68,68,0.10);border-color:rgba(239,68,68,0.28)}
 .footer{display:flex;justify-content:space-between;align-items:center;margin-top:16px}
 #progress-counter{font-weight:700}
-.progress{height:10px;background:rgba(255,255,255,0.04);border-radius:999px;overflow:hidden}
-.progress > i{display:block;height:100%;background:linear-gradient(90deg,var(--accent),var(--accent-2));width:0%}
 @media (max-width:600px){body{padding:12px}}
