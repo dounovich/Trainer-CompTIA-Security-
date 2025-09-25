@@ -1,8 +1,21 @@
-body { font-family: Arial, sans-serif; background:#f0f0f0; margin:0; padding:0; box-sizing:border-box;}
-.container { max-width:800px; margin:0 auto; padding:20px; }
-header { display:flex; justify-content:space-between; align-items:center; margin-bottom:20px; }
-#quizCard { background:white; padding:20px; border-radius:10px; box-shadow:0 2px 8px rgba(0,0,0,0.1); }
-.choice { display:block; margin:8px 0; padding:10px; border:1px solid #ccc; border-radius:6px; cursor:pointer; }
-.choice.selected { border-color:#00bcd4; background:#e0f7fa; }
-.footer { display:flex; justify-content:space-between; align-items:center; margin-top:20px; }
-.resultItem { background:#fafafa; padding:10px; border-radius:6px; margin-bottom:10px; }
+:root{--bg:#0f1724;--card:#0b1220;--accent:#00bcd4;--muted:#94a3b8;--accent-2:#10b981}
+body{font-family:Inter,Segoe UI,Roboto,Arial;background:linear-gradient(180deg,#071029 0%, #0b1220 100%);color:#e6eef6;margin:0;padding:24px}
+.wrap{max-width:980px;margin:0 auto}
+header{display:flex;align-items:center;gap:16px}
+h1{margin:0;font-size:1.4rem}
+.controls{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}
+button,select{background:var(--card);color:inherit;border:1px solid rgba(255,255,255,0.04);padding:8px 12px;border-radius:8px;cursor:pointer}
+button:disabled{opacity:0.5;cursor:not-allowed}
+.card{background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent);padding:16px;border-radius:12px;margin-top:12px;border:1px solid rgba(255,255,255,0.03)}
+.q{font-weight:700;font-size:1.2rem;margin-bottom:12px}
+.meta{color:var(--muted);font-size:0.9rem;margin-top:8px}
+.choices{margin-top:8px;display:flex;flex-direction:column;gap:8px}
+.choice{padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.06);cursor:pointer}
+.choice.selected{outline:2px solid rgba(0,188,212,0.24)}
+.choice.correct{background:rgba(16,185,129,0.12);border-color:rgba(16,185,129,0.25)}
+.choice.wrong{background:rgba(239,68,68,0.10);border-color:rgba(239,68,68,0.28)}
+.footer{display:flex;justify-content:space-between;align-items:center;margin-top:16px}
+#progress-counter{font-weight:700}
+.progress{height:10px;background:rgba(255,255,255,0.04);border-radius:999px;overflow:hidden}
+.progress > i{display:block;height:100%;background:linear-gradient(90deg,var(--accent),var(--accent-2));width:0%}
+@media (max-width:600px){body{padding:12px}}

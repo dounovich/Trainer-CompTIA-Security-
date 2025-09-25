@@ -1,52 +1,43 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>QCM Security+</title>
 <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-<div class="container">
-  <header>
-    <h1>QCM CompTIA Security+</h1>
-    <div class="selectors">
-      <label>Mode :
-        <select id="modeSelect">
+  <div class="wrap">
+    <header>
+      <h1>QCM Security+</h1>
+      <div class="controls">
+        <select id="mode">
           <option value="exam">Examen (50 questions)</option>
           <option value="training">Training (toutes les questions)</option>
         </select>
-      </label>
-      <label>Domaine :
-        <select id="domainSelect">
+        <select id="domain">
           <option value="all">Tous</option>
-          <option value="Threats">Threats, Attacks & Vulnerabilities</option>
-          <option value="Architecture">Architecture & Design</option>
-          <option value="Implementation">Implementation</option>
-          <option value="Operations">Operations & Incident Response</option>
-          <option value="Governance">Governance, Risk & Compliance</option>
+          <option value="network">Sécurité Réseau</option>
+          <option value="threats">Menaces & Attaques</option>
+          <option value="identity">Gestion Identité</option>
+          <option value="crypto">Cryptographie</option>
+          <option value="risk">Gestion Risques</option>
         </select>
-      </label>
-    </div>
-  </header>
-  <main>
-    <div id="quizCard">
-      <div id="questionText"></div>
-      <div id="choices"></div>
-      <div id="explanation" style="display:none;"></div>
-      <div class="footer">
-        <button id="prevBtn">← Précédent</button>
-        <span id="progress">0 / 0</span>
-        <button id="nextBtn">Suivant →</button>
+      </div>
+    </header>
+
+    <div id="quiz-container"></div>
+
+    <div class="footer" id="quiz-footer" style="display:none;">
+      <div id="progress-counter">Question 1 / 1</div>
+      <div>
+        <button id="prev-btn">← Précédent</button>
+        <button id="next-btn">Suivant →</button>
+        <button id="submit-btn" disabled>Valider l'examen</button>
       </div>
     </div>
-    <div id="results" style="display:none;">
-      <h2>Résultats</h2>
-      <div id="scoreSummary"></div>
-      <div id="detailedResults"></div>
-    </div>
-  </main>
-</div>
+  </div>
+
 <script src="assets/questions.js"></script>
 <script src="assets/quiz.js"></script>
 <script src="assets/main.js"></script>
