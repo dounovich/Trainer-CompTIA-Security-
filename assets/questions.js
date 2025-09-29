@@ -267,5 +267,245 @@ const QUESTIONS = [
 { q: "Which type of security testing simulates real-world attacks?", 
   choices: ["Vulnerability scanning", "Penetration testing", "Code review", "Log analysis"], 
   answer: 1, domain: "General Security Concepts", 
-  explanation: "Penetration testing simulates real-world attacks to identify exploitable weaknesses." }
+  explanation: "Penetration testing simulates real-world attacks to identify exploitable weaknesses." },
+
+{ q: "Which type of malware encrypts files and demands payment for decryption?", 
+  choices: ["Trojan", "Spyware", "Ransomware", "Rootkit"], 
+  answer: 2, domain: "Threats, Vulnerabilities, and Mitigations", 
+  explanation: "Ransomware encrypts data and requires a ransom payment to restore access." },
+
+{ q: "What type of vulnerability arises when applications fail to sanitize user input?", 
+  choices: ["SQL injection", "Privilege escalation", "Race condition", "Zero-day"], 
+  answer: 0, domain: "Threats, Vulnerabilities, and Mitigations", 
+  explanation: "Improper input validation can lead to SQL injection attacks." },
+
+{ q: "Which attack involves exploiting simultaneous actions to manipulate shared resources?", 
+  choices: ["Race condition", "Logic bomb", "Brute force", "Man-in-the-middle"], 
+  answer: 0, domain: "Threats, Vulnerabilities, and Mitigations", 
+  explanation: "A race condition occurs when processes access shared resources at the same time, creating security flaws." },
+
+{ q: "What is the main characteristic of a zero-day vulnerability?", 
+  choices: ["Already patched", "No patch available", "Occurs only on Windows", "Low severity"], 
+  answer: 1, domain: "Threats, Vulnerabilities, and Mitigations", 
+  explanation: "A zero-day vulnerability is unknown to the vendor and has no patch available." },
+
+{ q: "Which social engineering attack involves pretending to be from technical support?", 
+  choices: ["Whaling", "Vishing", "Pretexting", "Pharming"], 
+  answer: 2, domain: "Threats, Vulnerabilities, and Mitigations", 
+  explanation: "Pretexting involves creating a fabricated scenario, like impersonating IT staff, to trick a victim." },
+
+{ q: "Which wireless attack tricks users into connecting to a malicious access point?", 
+  choices: ["Evil twin", "Replay attack", "Jamming", "Bluejacking"], 
+  answer: 0, domain: "Threats, Vulnerabilities, and Mitigations", 
+  explanation: "An evil twin attack sets up a rogue AP with the same SSID to lure users." },
+
+{ q: "Which type of malware hides its presence by altering system processes?", 
+  choices: ["Worm", "Rootkit", "Trojan", "Adware"], 
+  answer: 1, domain: "Threats, Vulnerabilities, and Mitigations", 
+  explanation: "Rootkits hide malicious activity by modifying system processes or the kernel." },
+
+{ q: "What is the main purpose of vulnerability scanning?", 
+  choices: ["Exploit systems", "Identify security weaknesses", "Patch vulnerabilities automatically", "Launch penetration tests"], 
+  answer: 1, domain: "Threats, Vulnerabilities, and Mitigations", 
+  explanation: "Vulnerability scanning identifies potential weaknesses without exploiting them." },
+
+{ q: "Which type of attack attempts to overwhelm wireless signals with interference?", 
+  choices: ["Evil twin", "Jamming", "Spoofing", "Pharming"], 
+  answer: 1, domain: "Threats, Vulnerabilities, and Mitigations", 
+  explanation: "Jamming disrupts legitimate wireless communication by flooding frequencies with noise." },
+
+{ q: "Which attack involves sending fraudulent emails that appear from a trusted source?", 
+  choices: ["Phishing", "Whaling", "Vishing", "Smishing"], 
+  answer: 0, domain: "Threats, Vulnerabilities, and Mitigations", 
+  explanation: "Phishing uses fraudulent emails to trick users into revealing sensitive data." },
+
+{ q: "Which vulnerability allows attackers to execute code in a process’s memory?", 
+  choices: ["Buffer overflow", "Cross-site scripting", "Privilege escalation", "Brute force"], 
+  answer: 0, domain: "Threats, Vulnerabilities, and Mitigations", 
+  explanation: "Buffer overflow occurs when memory is overwritten, allowing code execution." },
+
+{ q: "Which type of threat actor is primarily motivated by financial gain?", 
+  choices: ["Hacktivist", "Insider", "Cybercriminal", "Nation-state"], 
+  answer: 2, domain: "Threats, Vulnerabilities, and Mitigations", 
+  explanation: "Cybercriminals typically attack systems to steal money or valuable data." },
+
+{ q: "What type of attack injects malicious code into a website to target users?", 
+  choices: ["SQL injection", "Cross-site scripting (XSS)", "Command injection", "Directory traversal"], 
+  answer: 1, domain: "Threats, Vulnerabilities, and Mitigations", 
+  explanation: "XSS injects malicious scripts into websites to execute on visitors' browsers." },
+
+{ q: "Which best practice reduces the risk of privilege escalation?", 
+  choices: ["Strong passwords", "Regular patching", "Least privilege principle", "Encryption"], 
+  answer: 2, domain: "Threats, Vulnerabilities, and Mitigations", 
+  explanation: "Applying least privilege prevents attackers from escalating privileges if accounts are compromised." },
+
+{ q: "Which attack manipulates users into visiting a malicious website through DNS poisoning?", 
+  choices: ["Pharming", "Smishing", "MITM", "Whaling"], 
+  answer: 0, domain: "Threats, Vulnerabilities, and Mitigations", 
+  explanation: "Pharming redirects users from legitimate sites to malicious ones via DNS manipulation." },
+
+{ q: "Which vulnerability scanning type involves sending crafted inputs to test for flaws?", 
+  choices: ["Credentialed scan", "Non-credentialed scan", "Fuzzing", "Static analysis"], 
+  answer: 2, domain: "Threats, Vulnerabilities, and Mitigations", 
+  explanation: "Fuzzing sends random or malformed inputs to detect vulnerabilities." },
+
+{ q: "Which type of threat actor is often well-funded and targets government or military systems?", 
+  choices: ["Hacktivist", "Nation-state", "Insider", "Script kiddie"], 
+  answer: 1, domain: "Threats, Vulnerabilities, and Mitigations", 
+  explanation: "Nation-state actors are highly skilled and funded, targeting strategic systems." },
+
+{ q: "Which vulnerability allows attackers to move from one virtual machine to another?", 
+  choices: ["VM escape", "Privilege escalation", "Sandboxing", "Buffer overflow"], 
+  answer: 0, domain: "Threats, Vulnerabilities, and Mitigations", 
+  explanation: "VM escape exploits allow attackers to break out of a virtual machine to the host or other VMs." },
+
+{ q: "Which type of insider threat is accidental?", 
+  choices: ["Malicious insider", "Negligent insider", "Disgruntled insider", "External attacker"], 
+  answer: 1, domain: "Threats, Vulnerabilities, and Mitigations", 
+  explanation: "Negligent insiders cause harm unintentionally, such as mishandling sensitive data." },
+
+{ q: "Which technique helps protect against brute-force login attacks?", 
+  choices: ["Salting", "Account lockout", "Hashing", "Encryption"], 
+  answer: 1, domain: "Threats, Vulnerabilities, and Mitigations", 
+  explanation: "Account lockout policies prevent repeated brute-force attempts by locking accounts after failures." },
+
+{ q: "Which type of malware displays unwanted advertisements?", 
+  choices: ["Adware", "Trojan", "Ransomware", "Spyware"], 
+  answer: 0, domain: "Threats, Vulnerabilities, and Mitigations", 
+  explanation: "Adware generates unwanted advertisements, sometimes bundled with other malware." },
+
+{ q: "Which vulnerability allows directory traversal using '../' sequences?", 
+  choices: ["Command injection", "Path traversal", "SQL injection", "Cross-site request forgery"], 
+  answer: 1, domain: "Threats, Vulnerabilities, and Mitigations", 
+  explanation: "Path traversal exploits use '../' to access restricted directories and files." },
+
+{ q: "What type of wireless attack exploits the WPS feature?", 
+  choices: ["PIN brute force", "Evil twin", "Deauthentication", "Jamming"], 
+  answer: 0, domain: "Threats, Vulnerabilities, and Mitigations", 
+  explanation: "WPS PIN brute force attacks exploit weak PIN authentication in Wi-Fi Protected Setup." },
+
+{ q: "Which attack occurs when attackers resend captured authentication packets?", 
+  choices: ["Replay attack", "MITM", "Brute force", "Phishing"], 
+  answer: 0, domain: "Threats, Vulnerabilities, and Mitigations", 
+  explanation: "Replay attacks involve resending valid authentication messages to gain access." },
+
+{ q: "Which type of assessment involves actively exploiting vulnerabilities?", 
+  choices: ["Penetration testing", "Vulnerability scanning", "Static code analysis", "Threat modeling"], 
+  answer: 0, domain: "Threats, Vulnerabilities, and Mitigations", 
+  explanation: "Penetration testing goes beyond scanning by exploiting vulnerabilities to demonstrate risks." },
+
+{ q: "Which mitigation best prevents SQL injection?", 
+  choices: ["Input validation", "Encryption", "Hashing", "Access logs"], 
+  answer: 0, domain: "Threats, Vulnerabilities, and Mitigations", 
+  explanation: "Input validation and parameterized queries prevent SQL injection attacks." },
+
+{ q: "What is a primary characteristic of spyware?", 
+  choices: ["Encrypts data", "Monitors user activity", "Replicates automatically", "Deletes system files"], 
+  answer: 1, domain: "Threats, Vulnerabilities, and Mitigations", 
+  explanation: "Spyware secretly monitors user activity and transmits information without consent." },
+
+{ q: "Which attack attempts to inject commands into an application to run on the OS?", 
+  choices: ["Command injection", "SQL injection", "Cross-site scripting", "Buffer overflow"], 
+  answer: 0, domain: "Threats, Vulnerabilities, and Mitigations", 
+  explanation: "Command injection occurs when attackers run arbitrary OS commands via vulnerable apps." },
+
+{ q: "Which type of threat actor uses attacks for political or ideological motives?", 
+  choices: ["Nation-state", "Hacktivist", "Script kiddie", "Insider"], 
+  answer: 1, domain: "Threats, Vulnerabilities, and Mitigations", 
+  explanation: "Hacktivists conduct attacks for political or social causes." },
+
+{ q: "Which type of vulnerability scan uses valid user credentials?", 
+  choices: ["Credentialed scan", "Non-credentialed scan", "Black-box scan", "Fuzzing"], 
+  answer: 0, domain: "Threats, Vulnerabilities, and Mitigations", 
+  explanation: "Credentialed scans use valid credentials to test vulnerabilities as an authenticated user." },
+
+{ q: "Which attack involves flooding a target with SYN requests?", 
+  choices: ["Ping flood", "SYN flood", "Smurf attack", "Replay attack"], 
+  answer: 1, domain: "Threats, Vulnerabilities, and Mitigations", 
+  explanation: "A SYN flood overwhelms a system by sending many half-open TCP requests." },
+
+{ q: "Which method can prevent cross-site request forgery (CSRF) attacks?", 
+  choices: ["Tokens in requests", "Encryption", "Firewall rules", "Input validation"], 
+  answer: 0, domain: "Threats, Vulnerabilities, and Mitigations", 
+  explanation: "CSRF tokens ensure requests come from legitimate users and not attackers." },
+
+{ q: "What is the main goal of threat intelligence?", 
+  choices: ["Exploit vulnerabilities", "Understand and anticipate threats", "Patch systems", "Monitor logs"], 
+  answer: 1, domain: "Threats, Vulnerabilities, and Mitigations", 
+  explanation: "Threat intelligence provides knowledge about adversaries, techniques, and risks." },
+
+{ q: "Which malware spreads via self-replication without attaching to files?", 
+  choices: ["Virus", "Worm", "Trojan", "Spyware"], 
+  answer: 1, domain: "Threats, Vulnerabilities, and Mitigations", 
+  explanation: "Worms self-replicate and spread independently, unlike viruses that attach to files." },
+
+{ q: "Which vulnerability allows attackers to access uninitialized memory contents?", 
+  choices: ["Race condition", "Memory leak", "Use-after-free", "Privilege escalation"], 
+  answer: 2, domain: "Threats, Vulnerabilities, and Mitigations", 
+  explanation: "Use-after-free flaws allow access to memory after it is freed, enabling exploitation." },
+
+{ q: "Which attack attempts to guess a password from a predefined list?", 
+  choices: ["Brute force", "Dictionary attack", "Rainbow table", "Replay attack"], 
+  answer: 1, domain: "Threats, Vulnerabilities, and Mitigations", 
+  explanation: "Dictionary attacks try common words or lists of passwords to gain access." },
+
+{ q: "Which vulnerability scanner provides detailed results about missing patches?", 
+  choices: ["Credentialed scanner", "Non-credentialed scanner", "Black-box tool", "Fuzzer"], 
+  answer: 0, domain: "Threats, Vulnerabilities, and Mitigations", 
+  explanation: "Credentialed scans provide detailed results on missing patches and insecure settings." },
+
+{ q: "Which wireless attack forces clients to disconnect by sending spoofed deauth frames?", 
+  choices: ["Evil twin", "Jamming", "Deauthentication attack", "Bluejacking"], 
+  answer: 2, domain: "Threats, Vulnerabilities, and Mitigations", 
+  explanation: "Deauthentication attacks force clients off legitimate APs, enabling hijacking attempts." },
+
+{ q: "Which attack targets executives with highly customized phishing emails?", 
+  choices: ["Pharming", "Whaling", "Smishing", "Vishing"], 
+  answer: 1, domain: "Threats, Vulnerabilities, and Mitigations", 
+  explanation: "Whaling is a phishing attack targeting high-level executives." },
+
+{ q: "Which mitigation helps against insider threats?", 
+  choices: ["Awareness training", "Multifactor authentication", "Separation of duties", "Encryption"], 
+  answer: 2, domain: "Threats, Vulnerabilities, and Mitigations", 
+  explanation: "Separation of duties prevents a single insider from having too much control." },
+
+{ q: "Which assessment simulates the perspective of an external attacker?", 
+  choices: ["White-box test", "Gray-box test", "Black-box test", "Credentialed scan"], 
+  answer: 2, domain: "Threats, Vulnerabilities, and Mitigations", 
+  explanation: "Black-box tests simulate external attackers with no prior knowledge." },
+
+{ q: "Which type of vulnerability occurs when sensitive data is stored in plaintext?", 
+  choices: ["Improper cryptography", "Race condition", "Cross-site scripting", "Privilege escalation"], 
+  answer: 0, domain: "Threats, Vulnerabilities, and Mitigations", 
+  explanation: "Improper cryptography occurs when sensitive data is stored or transmitted without protection." },
+
+{ q: "Which term describes the delay between vulnerability discovery and patch release?", 
+  choices: ["Exploit window", "Threat window", "Vulnerability window", "Exposure window"], 
+  answer: 2, domain: "Threats, Vulnerabilities, and Mitigations", 
+  explanation: "The vulnerability window is the time from discovery until a patch or mitigation is released." },
+
+{ q: "Which mitigation reduces the effectiveness of rainbow table attacks?", 
+  choices: ["Salting", "Encryption", "Two-factor authentication", "Input validation"], 
+  answer: 0, domain: "Threats, Vulnerabilities, and Mitigations", 
+  explanation: "Salting makes rainbow table pre-computation ineffective by adding unique random data." },
+
+{ q: "Which vulnerability allows attackers to alter queries sent to a database?", 
+  choices: ["Buffer overflow", "SQL injection", "Command injection", "Cross-site scripting"], 
+  answer: 1, domain: "Threats, Vulnerabilities, and Mitigations", 
+  explanation: "SQL injection manipulates database queries through unsanitized inputs." },
+
+{ q: "Which type of social engineering attack is conducted via phone calls?", 
+  choices: ["Vishing", "Smishing", "Phishing", "Pretexting"], 
+  answer: 0, domain: "Threats, Vulnerabilities, and Mitigations", 
+  explanation: "Vishing (voice phishing) uses phone calls to trick victims into revealing sensitive data." },
+
+{ q: "Which mitigation reduces the risk of buffer overflow attacks?", 
+  choices: ["Input validation", "Encryption", "Hashing", "Access controls"], 
+  answer: 0, domain: "Threats, Vulnerabilities, and Mitigations", 
+  explanation: "Input validation prevents attackers from sending oversized or malicious inputs." },
+
+{ q: "Which type of assessment provides the most realistic attack simulation?", 
+  choices: ["Penetration testing", "Vulnerability scanning", "Static analysis", "Log monitoring"], 
+  answer: 0, domain: "Threats, Vulnerabilities, and Mitigations", 
+  explanation: "Penetration tests provide realistic attack simulations by exploiting vulnerabilities." }
 ];
